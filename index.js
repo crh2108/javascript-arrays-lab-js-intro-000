@@ -9,6 +9,6 @@ var destructivelyPrependKitten = name => {
   kittens.unshift(name)
 }
 
-var destructivelyRemoveLastKitten = => {
+var destructivelyRemoveLastKitten = () => {
   kittens.pop()
 }
