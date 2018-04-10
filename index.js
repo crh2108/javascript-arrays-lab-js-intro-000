@@ -1,26 +1,30 @@
 const app = "I don't do much."
 var kittens = ['Milo', 'Otis', 'Garfield']
 
-var destructivelyAppendKitten = name => {
+destructivelyAppendKitten = name => {
   kittens.push(name)
 }
 
-var destructivelyPrependKitten = name => {
+destructivelyPrependKitten = name => {
   kittens.unshift(name)
 }
 
-var destructivelyRemoveLastKitten = () => {
+destructivelyRemoveLastKitten = () => {
   kittens.pop()
 }
 
-var destructivelyRemoveFirstKitten = () => {
+destructivelyRemoveFirstKitten = () => {
   kittens.shift()
 }
 
-var appendKitten = name => {
+appendKitten = name => {
   return [...kittens, name]
 }
 
-var prependKitten = name => {
+prependKitten = name => {
   return [name,...kittens]
+}
+
+removeLastKitten = name => {
+   return kittens.slice(0, kittens.length - 1)
 }
